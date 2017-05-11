@@ -1,6 +1,6 @@
 {
     "name": "goodwong/laravel-wechat",
-    "description": "Laravel微信集成，包含微信用户、微信网页登录、微信扫码、微信消息、微信自定义菜单、微信公众平台用户分组",
+    "description": "Laravel微信基础模块，提供微信用户资料模型及微信账号的配置信息",
     "type": "library",
     "license": "MIT",
     "authors": [

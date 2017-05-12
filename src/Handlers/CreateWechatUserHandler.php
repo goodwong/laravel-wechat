@@ -26,8 +26,6 @@ class CreateWechatUserHandler
      */
     public function create($info)
     {
-        $info['privilege'] = json_encode($info['privilege']);
-
         $wechatUser = $this->wechatUserRepository->create($info);
 
         event(new WechatUserCreated($wechatUser));

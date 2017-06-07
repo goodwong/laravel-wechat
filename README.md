@@ -24,7 +24,10 @@ Laravel微信基础模块，提供微信用户资料模型及微信账号的配�
     Goodwong\LaravelWechat\WechatServiceProvider::class,
     ```
 
-
+5. 创建数据库
+    ```shell
+    php artisan migrate
+    ```
 
 ## 事件
 

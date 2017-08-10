@@ -14,9 +14,9 @@ class WechatServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-        $this->publishes([
-            __DIR__.'/config/wechat.php' => config_path('wechat.php'),
-        ]);
+        // $this->publishes([
+        //     __DIR__.'/config/wechat.php' => config_path('goodwong-wechat.php'),
+        // ]);
     }
 
     /**
@@ -26,8 +26,8 @@ class WechatServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(
-            __DIR__.'/../config/wechat.php', 'wechat'
-        );
+        // $this->mergeConfigFrom(
+        //     __DIR__.'/../config/wechat.php', 'goodwong-wechat'
+        // );
     }
 }

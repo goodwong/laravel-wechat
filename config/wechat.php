@@ -10,6 +10,5 @@ return [
     /**
      * 配置参数，在公众号平台里获取
      */
-    'app_id' => env('WECHAT_APPID', 'your-app-id'),
-    'secret' => env('WECHAT_SECRET', 'your-app-secret'),
+    // 'enable_easywechat' => env('GOODWONG_WECHAT_REGISTER_EASYWECHAT', true),
 ];

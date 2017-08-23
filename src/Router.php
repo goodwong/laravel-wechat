@@ -11,8 +11,10 @@ class Router
      * 
      * @return void
      */
-    public static function route()
+    public static function wechatUser()
     {
-        require __DIR__.'/routes.php';
+       Route::namespace('Goodwong\LaravelWechat\Http\Controllers')->group(function () {
+            Route::resource('wechat-users', 'WechatUserController');
+       });
     }
 }

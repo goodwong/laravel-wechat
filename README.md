@@ -49,8 +49,8 @@ Laravel微信基础模块，提供微信用户资料模型及微信账号的配�
 
 1. 创建微信用户
     ```php
-    $creator = app('Goodwong\LaravelWechat\Handlers\CreateWechatUserHandler');
-    $wechatUser = $creator->create($attributes);
+    $wechatHandler = app('Goodwong\LaravelWechat\Handlers\WechatHandler');
+    $wechatUser = $wechatHandler->create($attributes);
     ```
 
 2. 查询微信用户

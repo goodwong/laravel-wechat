@@ -5,7 +5,7 @@ namespace Goodwong\LaravelWechat\Handlers;
 use Goodwong\LaravelWechat\Events\WechatUserCreated;
 use Goodwong\LaravelWechat\Repositories\WechatUserRepository;
 
-class CreateWechatUserHandler
+class WechatHandler
 {
     /**
      * construct

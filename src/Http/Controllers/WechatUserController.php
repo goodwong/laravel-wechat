@@ -16,17 +16,19 @@ class WechatUserController extends Controller
      */
     public function index(Request $request)
     {
+        $per_page = $request->input('per_page');
+
         $query = WechatUser::getModel();
         // order by
         $query = $query->orderBy('id', 'desc');
         // get all wechatUsers
         if (!$request->has('users')) {
-            return $query->paginate();
+            return $query->paginate($per_page);
         }
         // where
         $ids = explode(',', $request->input('users'));
         $query = $query->whereIn('user_id', $ids);
-        return $query->paginate();
+        return $query->paginate($per_page);
     }
 
     /**

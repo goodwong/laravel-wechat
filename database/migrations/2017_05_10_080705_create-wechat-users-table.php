@@ -22,7 +22,7 @@ class CreateWechatUsersTable extends Migration
             $table->string('remark', 32)->nullable();
             $table->string('nickname', 32)->nullable();
             $table->string('sex', 8)->nullable();
-            $table->string('province', 8)->nullable();
+            $table->string('province', 16)->nullable();
             $table->string('city', 16)->nullable();
             $table->string('country', 16)->nullable();
             $table->string('language', 16)->nullable();

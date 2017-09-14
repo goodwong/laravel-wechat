@@ -38,12 +38,12 @@ class WechatHandler
     }
 
     /**
-     * fetch by openid
+     * create by openid
      * 
      * @param  string  $openid
      * @return WechatUser
      */
-    public function fetchByOpenid($openid)
+    public function createByOpenid($openid)
     {
         $info = app()->wechat->user->get($openid);
 

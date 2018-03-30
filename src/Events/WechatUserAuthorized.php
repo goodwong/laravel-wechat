@@ -1,8 +1,8 @@
 <?php
 
-namespace Goodwong\LaravelWechat\Events;
+namespace Goodwong\Wechat\Events;
 
-use Goodwong\LaravelWechat\Entities\WechatUser;
+use Goodwong\Wechat\Entities\WechatUser;
 use Illuminate\Queue\SerializesModels;
 
 class WechatUserAuthorized

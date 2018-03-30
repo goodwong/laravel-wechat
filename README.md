@@ -21,7 +21,7 @@ Laravel微信基础模块，提供微信用户资料模型及微信账号的配�
 
 4. 打开config/app.php，在providers数组里注册服务：
     ```php
-    Goodwong\LaravelWechat\WechatServiceProvider::class,
+    Goodwong\Wechat\WechatServiceProvider::class,
     Overtrue\LaravelWechat\ServiceProvider::class,
     ```
 3. 创建配置文件：
@@ -38,10 +38,10 @@ Laravel微信基础模块，提供微信用户资料模型及微信账号的配�
 
 ## 事件
 
-1. `Goodwong\LaravelWechat\Events\WechatUserAuthorized`微信授权
+1. `Goodwong\Wechat\Events\WechatUserAuthorized`微信授权
     可以监听此事件用于登录系统用户
 
-2. `Goodwong\LaravelWechat\Events\WechatUserCreated`微信用户创建完毕
+2. `Goodwong\Wechat\Events\WechatUserCreated`微信用户创建完毕
     可以监听此事件用于同步创建系统用户
 
 
@@ -49,13 +49,13 @@ Laravel微信基础模块，提供微信用户资料模型及微信账号的配�
 
 1. 创建微信用户
     ```php
-    $wechatHandler = app('Goodwong\LaravelWechat\Handlers\WechatHandler');
+    $wechatHandler = app('Goodwong\Wechat\Handlers\WechatHandler');
     $wechatUser = $wechatHandler->create($attributes);
     ```
 
 2. 查询微信用户
     ```php
-    $repository = app('Goodwong\LaravelWechat\Repositories\WechatUserRepository');
+    $repository = app('Goodwong\Wechat\Repositories\WechatUserRepository');
     $wechatUser = $repository->find($id);
     $wechatUsers = $repository->all();
     // ... 更多参见andersao/l5-repository文档

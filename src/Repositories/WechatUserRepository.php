@@ -1,6 +1,6 @@
 <?php
 
-namespace Goodwong\LaravelWechat\Repositories;
+namespace Goodwong\Wechat\Repositories;
 
 use Prettus\Repository\Eloquent\BaseRepository;
 
@@ -13,7 +13,7 @@ class WechatUserRepository extends BaseRepository
      */
     function model()
     {
-        return \Goodwong\LaravelWechat\Entities\WechatUser::class;
+        return \Goodwong\Wechat\Entities\WechatUser::class;
     }
 
     /**

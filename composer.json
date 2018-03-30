@@ -16,13 +16,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Goodwong\\LaravelWechat\\": "src/"
+            "Goodwong\\Wechat\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Goodwong\\LaravelWechat\\WechatServiceProvider"
+                "Goodwong\\Wechat\\WechatServiceProvider"
             ]
         }
     }

@@ -1,8 +1,8 @@
 <?php
 
-namespace Goodwong\LaravelWechat\Http\Controllers;
+namespace Goodwong\Wechat\Http\Controllers;
 
-use Goodwong\LaravelWechat\Entities\WechatUser;
+use Goodwong\Wechat\Entities\WechatUser;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -58,7 +58,7 @@ class WechatUserController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \Goodwong\LaravelWechat\Entities\WechatUser  $wechatUser
+     * @param  \Goodwong\Wechat\Entities\WechatUser  $wechatUser
      * @return \Illuminate\Http\Response
      */
     public function show(WechatUser $wechatUser)
@@ -69,7 +69,7 @@ class WechatUserController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \Goodwong\LaravelWechat\Entities\WechatUser  $wechatUser
+     * @param  \Goodwong\Wechat\Entities\WechatUser  $wechatUser
      * @return \Illuminate\Http\Response
      */
     public function edit(WechatUser $wechatUser)
@@ -81,7 +81,7 @@ class WechatUserController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Goodwong\LaravelWechat\Entities\WechatUser  $wechatUser
+     * @param  \Goodwong\Wechat\Entities\WechatUser  $wechatUser
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, WechatUser $wechatUser)
@@ -92,7 +92,7 @@ class WechatUserController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \Goodwong\LaravelWechat\Entities\WechatUser  $wechatUser
+     * @param  \Goodwong\Wechat\Entities\WechatUser  $wechatUser
      * @return \Illuminate\Http\Response
      */
     public function destroy(WechatUser $wechatUser)
